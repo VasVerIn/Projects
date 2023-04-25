@@ -1,0 +1,94 @@
+.header {background-color: rgb(175, 236, 213);
+        padding: 25px 0;
+        border-bottom: 1px solid rgb(229,229,229);
+        position: sticky;
+        top: 0;
+        z-index: 9000;
+}
+.header_wrap {display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:rgb(219, 104, 210);
+}
+.icon {
+    font-size: 55px;
+    color: rgb(219, 104, 210);
+}
+
+.navigation {
+}
+.navigation_list {
+display: flex;
+}
+
+.navigation_list_item {
+  margin-left: 60px;
+  /*text-transform: uppercase;*/
+  font-size: 2rem;
+  /*font-weight: bold;*/
+  color: rgb(104, 99, 99);
+}
+
+.navigation_list_item a{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(219, 104, 210); 
+
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Кнопка выпадающего списка */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Важно для вертикального выравнивания на мобильных телефонах */
+    margin: 0; /* Важно для вертикального выравнивания на мобильных телефонах */
+  }
+  
+  /* Добавить красный цвет фона для ссылок на навигационную панель при наведении курсора */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
